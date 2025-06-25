@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>TIC TAC TOE</h1>
+  <div class="settings">
+    <label>Mode: </label>
+    <select id="mode">
+      <option value="2Player">2 Player</option>
+      <option value="vsComputer">Player vs Computer</option>
+    </select>
+    <label>Theme: </label>
+    <select id="theme">
+      <option value="Peaceful">Peaceful</option>
+      <option value="Ocean">Ocean</option>
+    </select>
+    <label>Board: </label>
+    <select id="board">
+      <option value="Square">Square</option>
+      <option value="Rounded">Rounded</option>
+    </select>
+  </div>
+
+  <div class="game-board" id="game-board"></div>
+  <div id="status">Player X's Turn</div>
+  <button id="restart">RESTART GAME</button>
+
+  <div id="sparkle-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>

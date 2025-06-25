@@ -1,0 +1,99 @@
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #004466;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: background 0.5s ease-in-out;
+}
+
+h1 {
+  text-shadow: 0 0 10px #fff;
+}
+
+.settings {
+  margin-bottom: 20px;
+}
+
+.settings select {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #e6ffff;
+  color: #004466;
+  border: 2px solid #00aaff;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffffaa;
+  border: 2px solid #00aaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cell.rounded {
+  border-radius: 15px;
+}
+
+#status {
+  margin: 10px;
+  font-size: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0077aa;
+}
+
+#sparkle-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.sparkle {
+  position: absolute;
+  font-size: 24px;
+  animation: float 2s ease-out forwards;
+  opacity: 0.8;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg) scale(1.5);
+    opacity: 0;
+  }
+}
