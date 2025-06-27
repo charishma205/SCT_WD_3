@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Challenge!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="quiz-header">
+            <h1>QUIZ CHALLENGE!</h1>
+            <p>Test your knowledge with our interactive quiz.</p>
+        </header>
+
+        <div id="quiz-box" class="quiz-box">
+            <div id="question-container" class="question-container">
+                <h2 id="question-text"></h2>
+                <div id="options-container" class="options-container">
+                </div>
+                <div id="feedback-message" class="feedback-message"></div>
+                <div class="navigation-buttons">
+                    <button id="submit-answer-btn" class="btn">Submit Answer</button>
+                    <button id="next-question-btn" class="btn next-btn" style="display:none;">Next Question</button>
+                </div>
+            </div>
+
+            <div id="quiz-results" class="quiz-results" style="display:none;">
+                <h2>Quiz Complete!</h2>
+                <p>Your final score: <span id="final-score"></span> / <span id="total-questions"></span></p>
+                <div id="score-summary" class="score-summary">
+                </div>
+                <button id="restart-quiz-btn" class="btn restart-btn">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
